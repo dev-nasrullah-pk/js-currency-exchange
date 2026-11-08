@@ -1,4 +1,3 @@
-
 * {
     padding: 0;
     margin: 0;
@@ -6,7 +5,8 @@
 }
 
 body {
-font-family: -apple-sy  stem, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;   background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +34,6 @@ font-family: -apple-sy  stem, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     align-items: center;
     text-align: center;
     margin-bottom: 24px;
-
 }
 
 .converter-container header p {
@@ -57,15 +56,6 @@ font-family: -apple-sy  stem, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     padding: 8px;
 }
 
-.currency-btns {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
 .input-wraper {
     position: relative;
     display: flex;
@@ -82,19 +72,6 @@ font-family: -apple-sy  stem, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
 .input-wraper input {
     padding-left: 40px;
     font-size: 18px;
-}
-
-.btn {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    padding: 10px 16px;
-    border: 1px solid #E2E8F0;
-    width: 130px;
-    font-weight: 700;
-    border-radius: 12px;
-    background-color: #f8fafc;
 }
 
 .convert-btn {
@@ -130,11 +107,6 @@ font-family: -apple-sy  stem, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     width: 20px;
     height: 20px;
     filter: brightness(0) invert(1);
-}
-
-.active {
-    border-color: #2563eb;
-    background-color: #eff6ff;
 }
 
 .result-card {
@@ -175,23 +147,27 @@ font-family: -apple-sy  stem, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     font-weight: 700;
     margin: 0;
 }
-.currency-container{
+
+.currency-container {
     display: flex;
     gap: 15px;
     margin: 20px 0;
 }
+
 .select-group {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 6px;
 }
-.select-group label{
+
+.select-group label {
     font-size: 13px;
     color: #64748b;
     font-weight: 500;
 }
-.select-group select{
+
+.select-group select {
     width: 100%;
     padding: 12px 14px;
     border: 1px solid #cbd5e1;
@@ -201,9 +177,10 @@ font-family: -apple-sy  stem, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     color: #1e293b;
     outline: none;
     cursor: pointer;
-    transition: all 0.2 ease;
+    transition: all 0.2s ease;
 }
+
 .select-group select:focus {
     border-color: #2563eb;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);   
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1); 
 }
