@@ -7,39 +7,108 @@
     <title>Currenies Currecy</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="main">
         <div class="converter-container">
             <header>
                 <div class="svg">
-                 <img src="./assests/arrow.svg" alt="">
+                    <img src="./assests/arrow.svg" alt="">
                 </div>
                 <h1>Currency Converter</h1>
                 <p>Convert Between, PKR, INR and SAR easily and qickly</p>
             </header>
             <div class="converter-card">
-                    <label for="">Enter Amount</label>
-                    <div class="input-wraper">
-                        <img src="./assests/dolor.svg" alt="">
-                        <input type="number" class="amount-input" placeholder="e.g 100"  value="1">
+                <label for="">Enter Amount</label>
+                <div class="input-wraper">
+                    <img src="./assests/dolor.svg" alt="">
+                    <input type="number" class="amount-input" placeholder="e.g 100" value="1">
+                </div>
+                <div class="currency-container">
+
+                    <div class="select-group">
+                        <label for="fromCurrency">From</label>
+                        <select id="fromCurrency">
+                            <option value="USD">USD - US Dollar</option>
+                            <option value="PKR">PKR - Pakistani Rupee</option>
+                            <option value="INR">INR - Indian Rupee</option>
+                            <option value="SAR">SAR - Saudi Riyal</option>
+                            <option value="AED">AED - UAE Dirham</option>
+                            <option value="EUR">EUR - Euro</option>
+                            <option value="GBP">GBP - British Pound</option>
+                            <option value="CAD">CAD - Canadian Dollar</option>
+                            <option value="AUD">AUD - Australian Dollar</option>
+                            <option value="JPY">JPY - Japanese Yen</option>
+                            <option value="CNY">CNY - Chinese Yuan</option>
+                            <option value="CHF">CHF - Swiss Franc</option>
+                            <option value="SGD">SGD - Singapore Dollar</option>
+                            <option value="NZD">NZD - New Zealand Dollar</option>
+                            <option value="QAR">QAR - Qatari Riyal</option>
+                            <option value="OMR">OMR - Omani Rial</option>
+                            <option value="KWD">KWD - Kuwaiti Dinar</option>
+                            <option value="BHD">BHD - Bahraini Dinar</option>
+                            <option value="MYR">MYR - Malaysian Ringgit</option>
+                            <option value="THB">THB - Thai Baht</option>
+                            <option value="IDR">IDR - Indonesian Rupiah</option>
+                            <option value="TRY">TRY - Turkish Lira</option>
+                            <option value="ZAR">ZAR - South African Rand</option>
+                            <option value="BRL">BRL - Brazilian Real</option>
+                            <option value="MXN">MXN - Mexican Peso</option>
+                            <option value="KRW">KRW - South Korean Won</option>
+                            <option value="HKD">HKD - Hong Kong Dollar</option>
+                            <option value="SEK">SEK - Swedish Krona</option>
+                            <option value="NOK">NOK - Norwegian Krone</option>
+                            <option value="DKK">DKK - Danish Krona</option>
+                        </select>
                     </div>
-                        <div class="currency-btns">
-                        <button class="pkr-btn btn"><img src="./assests/pkr.svg" alt="">PKR <img src="down.svg" alt=""></button>
-                        <button class="inr-btn btn"><img src="./assests/inr.svg" alt="">INR <img src="down.svg" alt=""></button>
-                        <button class="sar-btn btn"><img src="./assests/sar.svg" alt="">SAR <img src="down.svg" alt=""></button>
-                    </div>
-                    <div class="convert-btn">
-                        <button class="convert-btn button"><img src="./assests/arrow.svg" alt="">Convert Currency</button>
-                    </div>
-                    <div class="result-card">
-                        <div class="result-header">
-                            <span>Conversion Amount</span>
-                            <h2>0.00</h2>
-                        </div>
-                        <img src="./assests/coins.svg" alt="">
+                    <div class="select-group">
+                        <label for="toCurrency">To</label>
+                        <select id="toCurrency">
+                        <option value="USD">USD - US Dollar</option>
+                            <option value="PKR" selected>PKR - Pakistani Rupee</option>
+                            <option value="INR">INR - Indian Rupee</option>
+                            <option value="SAR">SAR - Saudi Riyal</option>
+                            <option value="AED">AED - UAE Dirham</option>
+                            <option value="EUR">EUR - Euro</option>
+                            <option value="GBP">GBP - British Pound</option>
+                            <option value="CAD">CAD - Canadian Dollar</option>
+                            <option value="AUD">AUD - Australian Dollar</option>
+                            <option value="JPY">JPY - Japanese Yen</option>
+                            <option value="CNY">CNY - Chinese Yuan</option>
+                            <option value="CHF">CHF - Swiss Franc</option>
+                            <option value="SGD">SGD - Singapore Dollar</option>
+                            <option value="NZD">NZD - New Zealand Dollar</option>
+                            <option value="QAR">QAR - Qatari Riyal</option>
+                            <option value="OMR">OMR - Omani Rial</option>
+                            <option value="KWD">KWD - Kuwaiti Dinar</option>
+                            <option value="BHD">BHD - Bahraini Dinar</option>
+                            <option value="MYR">MYR - Malaysian Ringgit</option>
+                            <option value="THB">THB - Thai Baht</option>
+                            <option value="IDR">IDR - Indonesian Rupiah</option>
+                            <option value="TRY">TRY - Turkish Lira</option>
+                            <option value="ZAR">ZAR - South African Rand</option>
+                            <option value="BRL">BRL - Brazilian Real</option>
+                            <option value="MXN">MXN - Mexican Peso</option>
+                            <option value="KRW">KRW - South Korean Won</option>
+                            <option value="HKD">HKD - Hong Kong Dollar</option>
+                            <option value="SEK">SEK - Swedish Krona</option>
+                            <option value="NOK">NOK - Norwegian Krone</option>
+                            <option value="DKK">DKK - Danish Krona</option>
+                        </select>
                     </div>
                 </div>
+                <div class="convert-btn">
+                    <button class="convert-btn button"><img src="./assests/arrow.svg" alt="">Convert Currency</button>
+                </div>
+                <div class="result-card">
+                    <div class="result-header">
+                        <span>Conversion Amount</span>
+                        <h2>0.00</h2>
+                    </div>
+                    <img src="./assests/coins.svg" alt="">
+                </div>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
